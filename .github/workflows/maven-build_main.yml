@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-
     runs-on: [self-hosted, ip-172-31-6-231]
     permissions:
       contents: read
