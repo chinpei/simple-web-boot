@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>HelloWorld</title>
+</head>
+<body>
+<h2>/simple</h2>
+ 	<h3>HTTP Header</h3>
+     <ul>
+         <li th:each="header : ${headers}">[[${header[0]}]] = [[${header[0]}]]</li>
+     </ul> 
+ 	<h3>Cookie</h3>
+     <ul>
+         <li th:each="cookie : ${#httpServletRequest.cookies}">[[${cookie.name}]] = [[${cookie.value}]]</li>
+     </ul> 
+  <p><a href="/">root</a></p>
+</body>
+</html>
